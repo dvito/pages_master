@@ -1,16 +1,14 @@
 ---
 layout: blog
-title: Justin Raines, Software Developer
+title: Justin's Blog
 ---
-
-<div id="home">
-  <h1>Blog</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      <article>
+<div class="large-9 columns" role="content">
+  {% for post in site.posts %}
+    <article>
+      <h3><a href="#">{{ post.title }}</a></h3>
+      <h6>Written by <a href="#">Justin Raines</a> on {{ post.date | date_to_string }}</h6>
       {{ post.content }}
-      </article>
-    {% endfor %}
-  </ul>
+    </article>
+    <hr>
+  {% endfor %}
 </div>
