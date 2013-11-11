@@ -17,20 +17,7 @@
     </head>
     <body>
       <!-- Nav -->
-      <div class="row">
-        <div class="large-12 columns">
-          <div class="nav-bar right">
-            <ul class="button-group">
-              <li><a href="index.html" class="button">Home</a></li>
-              <li><a href="posts.html" class="button">Posts</a></li>
-              <li><a href="projects.html" class="button">Projects</a></li>
-              <li><a href="about.html" class="button">About</a></li>
-            </ul>
-          </div>
-          <h1>Justin Raines <small>Developer</small></h1>
-          <hr />
-        </div>
-      </div>
+      {% include header.html %}
       <!-- End Nav -->
 
       <!-- Main Page Content and Sidebar -->
@@ -44,16 +31,7 @@
       <!-- End Main Content and Sidebar -->
 
       <!-- Footer -->
-      <footer class="row">
-        <div class="large-12 columns">
-          <hr />
-          <div class="row">
-            <div class="large-6 columns">
-              <p>Written by me with Jekyll and Foundation 4</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      {% include footer.html %}
       <!-- End Footer -->
     </body>
 </html>
