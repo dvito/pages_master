@@ -1,0 +1,20 @@
+---
+layout: default
+title: Category
+---
+<div class="large-9 columns" role="content">
+  <h2 class="post_title">{{page.title}}</h2>
+  <ul>
+    {% for post in site.categories['jekyll'] %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+<aside class="large-2 columns">
+  <h5>Categories</h5>
+  <ul class="side-nav">
+    {% for category in site.categories %}
+    <li><a href="categories/{{ category | first }}">{{ category | first }}</a></li>
+    {% endfor %}
+  </ul>
+</aside>

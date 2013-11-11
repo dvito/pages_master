@@ -26,19 +26,13 @@
       {{ content }}
       <!-- End Main Content -->
       <!-- Sidebar -->
-      <aside class="large-3 columns">
+      <aside class="large-2 columns">
         <h5>Categories</h5>
         <ul class="side-nav">
-          <li><a href="#">Programming</a></li>
-          <li><a href="#">Nerdy Stuff</a></li>
-          <li><a href="#">Life</a></li>
+          {% for category in site.categories %}
+          <li><a href="categories/{{ category | first }}">{{ category | first }}</a></li>
+          {% endfor %}
         </ul>
-
-        <div class="panel">
-          <h5>Featured</h5>
-          <p>Built with Jekyll!</p>
-          <a href="#">Read More &rarr;</a>
-        </div>
       </aside>
       <!-- End Sidebar -->
     </div>

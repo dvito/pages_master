@@ -8,7 +8,12 @@ title: Justin's Blog
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <h6>Written by <a href="#">Justin Raines</a> on {{ post.date | date_to_string }}</h6>
       {{ post.content }}
+      <dl class="sub-nav">
+        <dt>Categories:</dt>
+        {% for category in post.categories %}
+          <dd><a href="categories/{{category}}">{{category}}</a></dd>
+        {% endfor %}
+      </dl>
     </article>
-    <hr>
   {% endfor %}
 </div>

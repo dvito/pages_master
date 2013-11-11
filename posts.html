@@ -5,7 +5,9 @@ title: Justin's Posts
 
 <div class="large-9 columns" role="content">
   <h2>Posts</h2>
+  <ul>
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
+  </ul>
 </div>
