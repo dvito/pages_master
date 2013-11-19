@@ -2,24 +2,27 @@
 <html>
   {% include html_head.html %}
   <body>
-    <!-- Nav -->
-    {% include header.html %}
-    <!-- End Nav -->
-
-    <!-- Main Page Content and Sidebar -->
-    <div class="row">
-      <!-- Main Blog Content -->
-      <div class="large-9 columns" role="content">
-        {{ content }}
+    <div id="wrap">
+      <!-- Nav -->
+      {% include header.html %}
+      <!-- End Nav -->
+      <div class="container">
+        <!-- Main Page Content and Sidebar -->
+        <div class="row">
+          <!-- Main Blog Content -->
+          <div class="col-xs-12 col-md-10 col-lg-9">
+            {{ content }}
+          </div>
+          <!-- End Main Content -->
+          <!-- Sidebar -->
+          <div class="col-md-2 col-lg-3">
+            <img id="bw_self" src="img/justin_bw_2013.png">
+          </div>
+          <!-- End Sidebar -->
+        </div>
       </div>
-      <!-- End Main Content -->
-      <!-- Sidebar -->
-      <aside class="large-3 columns">
-        <img src="img/justin_bw_2013.png">
-      </aside>
-      <!-- End Sidebar -->
+      <!-- End Main Content and Sidebar -->
     </div>
-    <!-- End Main Content and Sidebar -->
 
     <!-- Footer -->
     {% include footer.html %}

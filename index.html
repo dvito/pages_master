@@ -1,19 +1,21 @@
 ---
-layout: blog
+layout: default
 title: Justin's Blog
 ---
-<div class="large-9 columns" role="content">
-  {% for post in site.posts %}
-    <article>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <h6>Written by <a href="#">Justin Raines</a> on {{ post.date | date_to_string }}</h6>
-      {{ post.content }}
-      <dl class="sub-nav">
-        <dt>Categories:</dt>
+{% for post in site.posts %}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h6>Written by <a href="/index.html">Justin Raines</a> on {{ post.date | date_to_string }}</h6>
+      <ul class="list-inline small">
+        <li>Categories:</li>
         {% for category in post.categories %}
-          <dd><a href="/categories/{{category}}">{{category}}</a></dd>
+          <li><a href="/categories/{{category}}">{{category}}</a></li>
         {% endfor %}
-      </dl>
-    </article>
-  {% endfor %}
-</div>
+      </ul>
+    </div>
+    <div class="panel-body">
+       {{ post.content }}
+    </div>
+  </div>
+{% endfor %}

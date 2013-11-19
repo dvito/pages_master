@@ -2,19 +2,35 @@
 <html>
   {% include html_head.html %}
   <body>
-    <!-- Nav -->
-    {% include header.html %}
-    <!-- End Nav -->
-
-    <!-- Main Page Content and Sidebar -->
-    <div class="row">
-      <!-- Main Blog Content -->
-      <div class="large-9 columns" role="content">
-        {{ content }}
+    <div id="wrap">
+      <!-- Nav -->
+      {% include header.html %}
+      <!-- End Nav -->
+      <div class="container">
+        <!-- Main Page Content and Sidebar -->
+        <div class="row">
+          <!-- Main Blog Content -->
+          <div class="col-xs-12 col-md-10 col-lg-9">
+            {{ content }}
+          </div>
+          <!-- End Main Content -->
+          <!-- Sidebar -->
+          <div class="col-md-2 col-lg-3">
+            <h5>Categories</h5>
+            <ul class="list-group">
+              {% for category in site.categories %}
+                <li class="list-group-item">
+                  <a href="/categories/{{ category | first }}">{{ category | first }}</a>
+                  <span class="badge">{{category | last | size}}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <!-- End Sidebar -->
+        </div>
       </div>
-      <!-- End Main Content -->
+      <!-- End Main Content and Sidebar -->
     </div>
-    <!-- End Main Content and Sidebar -->
 
     <!-- Footer -->
     {% include footer.html %}

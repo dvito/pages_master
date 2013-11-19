@@ -1,8 +1,26 @@
 ---
 layout: default
+title: Post
 ---
-
-  <h3><a href="#">{{ page.title }}</a></h3>
-  <h6>Written by <a href="#">Justin Raines</a> on {{ page.date | date_to_string }}</h6>
-  {{ content }}
-
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+    <h6>Written by <a href="#">Justin Raines</a> on {{ page.date | date_to_string }}</h6>
+    <ul class="list-inline small">
+      {% for category in page.categories %}
+        <li><a href="/categories/{{category}}">{{category}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="panel-body">
+     {{ page.content }}
+  </div>
+</div>
+<h5>Related Posts</h5>
+<ul class="list-unstyled">
+  {% for category in page.categories %}
+    {% for post in site.categories | category %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  {% endfor %}
+</ul>
