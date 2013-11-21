@@ -1,0 +1,16 @@
+
+<!-- Sidebar -->
+<div class="col-s-4 col-md-3 col-lg-3">
+  <h5>Categories</h5>
+  <ul class="list-group">
+    {% for category in site.categories %}
+      <li class="list-group-item">
+        <a href="/categories/{{ category | first }}">
+        {{ category | first }}
+        <span class="badge">{{category | last | size}}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+<!-- End Sidebar -->

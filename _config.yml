@@ -1,3 +1,6 @@
-name: Justin's Raines Personal Site
+name: Justin's Jekyll Jam
+description: Small blog and projects site
+url: http://justinrain.es
 markdown: redcarpet
 pygments: true
+paginate: 3

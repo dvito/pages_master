@@ -1,26 +1,18 @@
 ---
-layout: default
+layout: posts
 title: Post
 ---
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
-    <h6>Written by <a href="#">Justin Raines</a> on {{ page.date | date_to_string }}</h6>
-    <ul class="list-inline small">
+    <h2 class="panel-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <ul class="list-inline small no-margin">
+      <li>Categories:</li>
       {% for category in page.categories %}
         <li><a href="/categories/{{category}}">{{category}}</a></li>
       {% endfor %}
     </ul>
   </div>
   <div class="panel-body">
-     {{ page.content }}
+    {{ content }}
   </div>
 </div>
-<h5>Related Posts</h5>
-<ul class="list-unstyled">
-  {% for category in page.categories %}
-    {% for post in site.categories | category %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  {% endfor %}
-</ul>

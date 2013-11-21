@@ -59,3 +59,4 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-categories
+  redcarpet

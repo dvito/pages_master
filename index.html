@@ -1,13 +1,12 @@
 ---
-layout: default
+layout: blog
 title: Justin's Blog
 ---
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <h6>Written by <a href="/index.html">Justin Raines</a> on {{ post.date | date_to_string }}</h6>
-      <ul class="list-inline small">
+      <h2 class="panel-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <ul class="list-inline small no-margin">
         <li>Categories:</li>
         {% for category in post.categories %}
           <li><a href="/categories/{{category}}">{{category}}</a></li>
@@ -15,7 +14,8 @@ title: Justin's Blog
       </ul>
     </div>
     <div class="panel-body">
-       {{ post.content }}
+      {{ post.content }}
+      <a href="{{ post.url }}">Read More...</a>
     </div>
   </div>
 {% endfor %}

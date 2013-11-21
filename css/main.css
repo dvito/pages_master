@@ -48,3 +48,9 @@ code {
   height: 100%;
   width: 100%;
 }
+.no-margin{
+  margin: 0px !important;
+}
+.no-pad-left{
+  padding-left: 0px !important;
+}
