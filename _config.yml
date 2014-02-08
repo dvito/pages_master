@@ -4,3 +4,20 @@ url: http://justinrain.es
 markdown: redcarpet
 pygments: true
 paginate: 3
+navigation:
+- text: Blog
+  icon: fa fa-list
+  title: Personal Blog
+  url: /index.html
+- text: Posts
+  icon: fa fa-archive
+  title: Archive of Posts
+  url: /posts.html
+- text: Projects
+  icon: fa fa-code
+  title: Projects I've Worked On
+  url: /projects.html
+- text: About
+  icon: fa fa-user
+  title: About Me
+  url: /about.html

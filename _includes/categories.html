@@ -2,15 +2,13 @@
 <!-- Sidebar -->
 <div class="col-s-4 col-md-3 col-lg-3">
   <h5>Categories</h5>
-  <ul class="list-group">
+  <div class="list-group">
     {% for category in site.categories %}
-      <li class="list-group-item">
-        <a href="/categories/{{ category | first }}">
+      <a href="/categories/{{ category | first }}" class="list-group-item">
+        <span class="badge pull-right">{{category | last | size}}</span>
         {{ category | first }}
-        <span class="badge">{{category | last | size}}</span>
-        </a>
-      </li>
+      </a>
     {% endfor %}
-  </ul>
+  </div>
 </div>
 <!-- End Sidebar -->
