@@ -1,6 +1,8 @@
 name: Justin's Jekyll Jam
 description: Small blog and projects site
 url: http://justinrain.es
+source: /Users/justinraines/Code/pages_master
+destination: /Users/justinraines/Code/dvito.github.io
 markdown: redcarpet
 pygments: true
 paginate: 3
@@ -9,10 +11,10 @@ navigation:
   icon: fa fa-list
   title: Personal Blog
   url: /index.html
-- text: Posts
-  icon: fa fa-archive
-  title: Archive of Posts
-  url: /posts.html
+# - text: Archive
+#   icon: fa fa-archive
+#   title: Archive of Posts
+#   url: /posts.html
 - text: Projects
   icon: fa fa-code
   title: Projects I've Worked On

@@ -5,7 +5,7 @@ date:   2013-11-19 19:45:00
 categories: jekyll ruby
 ---
 
-I'm testing Jekyll right now as a blogging / resume site method. This test post contains some code syntax highlighting
+I'm testing Jekyll right now as a blogging / resume site method.
 
 ruby
 {% highlight ruby linenos table %}
