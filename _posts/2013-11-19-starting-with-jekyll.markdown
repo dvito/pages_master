@@ -2,7 +2,7 @@
 layout: post
 title:  "Starting with Jekyll"
 date:   2013-11-19 19:45:00
-categories: jekyll ruby
+categories: jekyll category ruby
 ---
 
 I'm testing Jekyll right now as a blogging / resume site method.
