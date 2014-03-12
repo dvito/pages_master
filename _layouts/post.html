@@ -3,11 +3,11 @@ layout: posts
 ---
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h2 class="panel-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <h1 class="panel-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
     <ul class="list-inline small no-margin">
       <li>Categories:</li>
       {% for category in page.categories %}
-        <li><a href="/categories/{{category}}">{{category}}</a></li>
+        <li><a href="/categories/{{category}}">{{ category }}</a></li>
       {% endfor %}
     </ul>
   </div>
