@@ -54,6 +54,21 @@ code {
   height: 100%;
   width: 100%;
 }
+
+#dvito-header{
+  font-family: "Lobster", cursive;
+  font-size: 35px;
+  color:  #E60000;
+}
+#blog-header{
+  color:  #E68A00;
+}
+#project-header{
+  color:  #2E5CB8;
+}
+#about-header{
+  color:  #008A2E;
+}
 .no-margin{
   margin: 0px !important;
 }
