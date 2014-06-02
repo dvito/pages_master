@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "ID": 1, "VALID_TIME": "JUL 13 - JUL 18", "OUTLOOK": "Possible" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -97.22, 29.0 ], [ -97.02, 28.93 ], [ -96.89, 28.71 ], [ -96.96, 28.57 ], [ -97.16, 28.56 ], [ -97.24, 28.61 ], [ -97.22, 29.0 ] ] ] } },
+{ "type": "Feature", "properties": { "ID": 2, "VALID_TIME": "JUL 13 - JUL 18", "OUTLOOK": "Occurring or Imminent" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -95.56, 30.32 ], [ -95.17, 30.18 ], [ -95.06, 30.0 ], [ -95.04, 29.85 ], [ -95.15, 29.79 ], [ -95.37, 29.87 ], [ -95.49, 30.01 ], [ -95.65, 30.12 ], [ -95.71, 30.13 ], [ -95.56, 30.32 ] ] ] } }
+]
+}
