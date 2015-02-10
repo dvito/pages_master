@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Measles Outbreak"
-date:   2014-03-11 15:30:00
+date:   2015-02-10 12:00:00
 categories: d3 javascript
 ---
 
@@ -15,6 +15,7 @@ I realize some of these poor parents have been infected by other kids, particula
 
 </div>
 
+Oh wait, its basically just california. Thanks California.
 
 <script src="/js/d3.v3.min.js"></script>
 <script src="/js/topojson.min.js"></script>
@@ -34,10 +35,14 @@ I realize some of these poor parents have been infected by other kids, particula
         data: data,
         geographyConfig: {
             popupTemplate: function(geo, data) {
-                return ['<div class="hoverinfo"><strong>',
+                if(data){
+                    return ['<div class="hoverinfo"><strong>',
                         'Number of cases in ' + geo.properties.name,
                         ': ' + data.cases,
                         '</strong></div>'].join('');
+                }else{
+                    return "";
+                }
             }
         }
     });
