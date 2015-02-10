@@ -1,8 +1,8 @@
 name: Justin's Jekyll Jam
 description: Small blog and projects site
 url: http://justinrain.es
-source: /Users/justinraines/Code/pages_master
-destination: /Users/justinraines/dvito
+source: /Users/justinraines/Code/pages_master/
+destination: /Users/justinraines/Code/dvito.github.io/
 markdown: redcarpet
 pygments: true
 paginate: 3
